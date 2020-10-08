@@ -1,3 +1,7 @@
+* {
+  /* position: sticky; */
+}
+
 body {
   margin: none;
 }
@@ -180,5 +184,4 @@ i:hover {
   margin-left: 450px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 500;
-  line-height: 25px;
 }
