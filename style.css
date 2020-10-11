@@ -2,9 +2,20 @@ body {
   margin: none;
 }
 
+header {
+  min-width: 960px;
+  display: flex;
+  flex-direction: column;
+}
+
+#home {
+  color: #0ba39c;
+}
+
 /* BODY OF PAGE */
 .best-beard {
   background-image: url(./beard.jpg);
+  background-repeat: none;
   color: white;
   background-size: 1850px;
   background-position: right;
@@ -14,7 +25,7 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-
+/* I LOVE BEARDS */
 .welcome {
   color: black;
   background-color: white;
@@ -38,6 +49,7 @@ body {
   margin-right: 50px;
 }
 
+/* READ MORE */
 .readmore-button > a {
   background: #0ba39c;
   color: #fff;
@@ -54,7 +66,7 @@ body {
   background: #11e8dd;
 }
 
-/* Logo and Business Name */
+/* LOGO AND BUSINESS NAME */
 header > .logo {
   display: flex;
   flex-direction: column;
@@ -69,10 +81,16 @@ header > .logo {
 nav {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   justify-content: space-around;
   font-family: "Secular One", sans-serif;
   margin-right: 35%;
   margin-left: 35%;
+  line-height: 3.5em;
+}
+
+.hover-button:hover {
+  color: #0ba39c;
 }
 
 a {
@@ -103,15 +121,16 @@ a {
   border: 5px solid;
 }
 
+/* BUSINESS LOGO */
 #logo {
   height: 180px;
 }
 
-.logo {
+/* .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 /* IMAGE LABELS */
 .box1 > p {
@@ -148,6 +167,10 @@ i:hover {
 }
 
 /* ABOUT PAGE */
+#about {
+  color: #0ba39c;
+}
+
 .about-pic {
   width: 630px;
   height: 280px;
@@ -156,17 +179,17 @@ i:hover {
   background-color: #242021;
 }
 
+/* HOW OUR LOVE STARTED */
 .flex > h1 {
+  /* display: inline-block; */
   color: white;
-  background-color: black;
-  width: fit-content;
+  background-color: #242021;
   font-size: 34px;
-  display: inline-block;
-  padding: 12px 27px;
-  margin-left: 500px;
-  margin-right: 500px;
+  padding: 15px 28px 12px;
+  /* width: max-content; */
 }
 
+/* MAIN CONTENT */
 .flex {
   display: flex;
   align-content: center;
@@ -180,4 +203,230 @@ i:hover {
   margin-left: 450px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 500;
+}
+
+/* GALLERY PAGE */
+#gallery {
+  color: #0ba39c;
+}
+
+/* FLEX CONTAINER */
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 300px 50px 360px;
+  gap: 12px;
+}
+
+/* GALLERY IMAGES */
+.flex-box > a > img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border: 1.5px solid#242021;
+  background-color: #242021;
+}
+
+/* GALLERY H1 */
+.label {
+  color: white;
+  background-color: #242021;
+  font-size: 34px;
+  padding: 15px 28px 12px;
+  text-align: center;
+  font-family: "Secular One", sans-serif;
+}
+
+.overlay:hover {
+  opacity: 0.6;
+  transition: ease-in-out 0.5s;
+}
+
+/* BLOG PAGE */
+#blog {
+  color: #0ba39c;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* BLOG ROWS */
+ul {
+  margin: 0;
+  padding: 24px 10px 0;
+  width: 940px;
+  text-align: center;
+  list-style: none;
+}
+
+/* BLOG INFO BOXES */
+.blog-container div > ul > li {
+  border: 2px solid #1a1a1a;
+  display: block;
+  list-style: none;
+  margin: 0 0 13px;
+  overflow: hidden;
+  padding: 0;
+  height: 200px;
+  font-family: "Raleway", sans-serif;
+}
+.h3-blog {
+  font-family: "Secular One", sans-serif;
+}
+
+/* BLOG IMAGES */
+.blog-container div ul li img {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
+  float: left;
+}
+
+/* READ THIS BLOG BUTTONS */
+.read-blog {
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  padding: 12px 50px 12px 50px;
+  font-size: 16px;
+}
+
+.read-blog:hover {
+  filter: invert(100%);
+}
+
+/* SINGLE BLOG PAGE */
+#single-blog {
+  height: 280px;
+  width: 300px;
+  object-fit: cover;
+  border: 2px solid;
+  background-color: black;
+}
+
+/* CONTACT PAGE */
+
+#contact {
+  color: #0ba39c;
+}
+
+#body {
+  display: block;
+  text-align: center;
+}
+
+form {
+}
+
+input[type="text"] {
+  margin: 12px;
+  width: 380px;
+  resize: none;
+  height: 35px;
+  text-align: center;
+}
+
+#message {
+  height: 180px;
+  width: 380px;
+  resize: none;
+  overflow: auto;
+  text-align: center;
+}
+
+#send {
+  margin: 10px;
+}
+
+/* PHONE */
+/* INDEX RESPONSIVE */
+@media screen and (max-width: 568px) {
+  body {
+    width: auto;
+  }
+
+  .box1 > img {
+    width: 450px;
+    height: 350px;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    min-width: 568px;
+  }
+
+  nav {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  /* MAIN BODY IMAGE */
+  .best-beard {
+    background-size: 950px;
+    background-position: left;
+  }
+
+  .best-beard > div > p {
+    display: none;
+  }
+
+  .welcome-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    margin-bottom: 200px;
+  }
+
+  /* ABOUT PAGE */
+
+  /* ABOUT TEXT */
+  .flex > p {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .about-pic {
+    width: 568px;
+  }
+
+  /* GALLERY PAGE */
+  .flex-box {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .flex-box > a > img {
+    width: 500px;
+    height: 350px;
+  }
+
+  /* BLOG PAGE */
+  ul {
+    width: 568px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .h3-blog {
+    line-height: 2em;
+    padding-top: 20px;
+    font-size: 25px;
+  }
+
+  /* SINGLE BLOG */
+  #single-blog {
+    width: 475px;
+  }
 }
